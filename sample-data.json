@@ -1,0 +1,29 @@
+{
+    "songs": [
+        {
+            "id": "d4a34a561fb261f53b8cc2bf20e28a74",
+            "title": "Solen er så rød",
+            "tags": [
+                "night"
+            ],
+            "text": [
+                "Solen er så rød mor\nOg natten er så sort\nNu er dagen væk mor, og solen gået bort.\nRæven går derude mor, vi låser vores gang\nKom sæt dig ved min pude mor, og syng en lille sang.",
+                "Himlen er så stor mor\nMed klare stjerner på\nHvem monstro, der bor, mor, på stjernen i det blå\nTror du de har senge mor, og sover li'som jeg?"
+            ]
+        },
+        {
+            "id": "d4c09a8a6e0356718a62b690100c4f35",
+            "title": "Elefantens vuggevise",
+            "tags": [
+                "night"
+            ],
+            "text": [
+                "Nu tændes der stjerner på himlens blå",
+                "En zebra tager sin natdragt på, med sorte og hvide striber",
+                "Hør tigeren brøler sin aften sang"
+            ]
+        }
+    ]
+
+
+}
