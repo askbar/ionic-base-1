@@ -16,16 +16,27 @@ export class MyApp {
   rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
+  tags: Array<{title: string, tag: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
+      { title: 'Forside', component: HomePage },
+    //  { title: 'List', component: ListPage },
       { title: 'Om os', component: AboutPage }
     ];
+
+    this.tags = [
+      { title: 'Godnat', tag: 'night'},
+      { title: 'Jul', tag: 'jul'},
+      { title: 'Vinter', tag: 'winter'},
+      { title: 'Efterår', tag: 'efteraar'},
+      { title: 'Sommer', tag: 'summer'},
+      { title: 'Forår', tag: 'spring'},
+      { title: 'Kristne', tag: 'christ'}
+    ]
 
   }
 
@@ -36,6 +47,10 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+
+  listSongs($event, tag) {
+    this.nav.push(ListPage, tag);
   }
 
   openPage(page) {
