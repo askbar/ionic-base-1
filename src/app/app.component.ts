@@ -7,8 +7,13 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 
+import { SongsApi } from '../shared/shared';
+
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [
+      SongsApi
+  ]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
